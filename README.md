@@ -33,8 +33,8 @@ pip install -r requirements.txt
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/rag-pdf-qa.git
-cd rag-pdf-qa
+git clone https://github.com/ayesh-merenchige/ChatWithPDF_RAGapp.git
+cd ChatWithPDF_RAGapp
 ```
 
 2. Install required libraries:
@@ -58,11 +58,7 @@ python -m nltk.downloader wordnet
 
 ### Running the Application
 
-To start the application, simply run the following command:
-
-```bash
-python main.py
-```
+To start the application, simply run cells in Basic_RAG_app.ipynb file:
 
 You will be prompted to enter a question based on the PDF content, and the model will provide an answer based on the most relevant information extracted from the PDFs.
 
@@ -127,15 +123,14 @@ response = self.generator(prompt, max_length=150, num_return_sequences=1)
 ```bash
 .
 ├── data/
-│   ├── data1.pdf
-│   └── data2.pdf
-├── main.py
+│   ├── data.pdf
+├── Basic_RAG_app.ipynb
 ├── requirements.txt
 └── README.md
 ```
 
 - `data/`: Contains the PDF files to be processed.
-- `main.py`: Main script for running the RAG PDF Q&A application.
+- `Basic_RAG_app.ipynb`: Main script for running the RAG PDF Q&A application.
 - `requirements.txt`: Lists all required Python dependencies.
 
 ## Requirements.txt
